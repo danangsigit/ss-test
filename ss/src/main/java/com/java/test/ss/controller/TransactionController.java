@@ -39,12 +39,12 @@ public class TransactionController {
         return new ResponseEntity<TransactionResponse>(result, HttpStatus.OK);
     }
 
-    @ApiOperation(value = "GET ONE Transaction", produces = MediaType.APPLICATION_JSON_VALUE)
-    @RequestMapping(value = ServicePath.TRANSACTION_SERVICE + ServicePath.TRANSACTION + ServicePath.TRANSACTION_ID, method = RequestMethod.GET)
-    public ResponseEntity<TransactionResponse> getOneTransaction(@PathVariable(value = "transaction_id") Long parentId){
-        TransactionResponse result = transactionService.getOneTransaction(parentId);
-        return new ResponseEntity<TransactionResponse>(result, HttpStatus.OK);
-    }
+//    @ApiOperation(value = "GET ONE Transaction", produces = MediaType.APPLICATION_JSON_VALUE)
+//    @RequestMapping(value = ServicePath.TRANSACTION_SERVICE + ServicePath.TRANSACTION + ServicePath.TRANSACTION_ID, method = RequestMethod.GET)
+//    public ResponseEntity<TransactionResponse> getOneTransaction(@PathVariable(value = "transaction_id") Long parentId){
+//        TransactionResponse result = transactionService.getOneTransaction(parentId);
+//        return new ResponseEntity<TransactionResponse>(result, HttpStatus.OK);
+//    }
 
     @ApiOperation(value = "GET List Transaction", produces = MediaType.APPLICATION_JSON_VALUE)
     @RequestMapping(value = ServicePath.TRANSACTION_SERVICE + ServicePath.TRANSACTION_TYPES + ServicePath.TRANSACTION_TYPE, method = RequestMethod.GET)
